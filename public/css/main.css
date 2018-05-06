@@ -1,0 +1,41 @@
+html, body  {
+	font-size: 16px;
+}
+
+nav.ui.basic.segment {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 9.25vh;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c61999+0,06a3e5+100 */
+	background: #c61999; /* Old browsers */
+	background: -moz-linear-gradient(10deg, #c61999 0%, #06a3e5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(10deg, #c61999 0%,#06a3e5 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(10deg, #c61999 0%,#06a3e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c61999', endColorstr='#06a3e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+nav.ui.basic.segment p{
+	font-size: 1rem;
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.ui.segment.introText{
+	margin-top: 7.59vh;
+	font-size: 1.25rem;
+	padding: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.ui.segment.introText h4{
+	font-size: 1.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 2.25rem;
+}
+
+div.column {
+	border: 1px solid black;
+}

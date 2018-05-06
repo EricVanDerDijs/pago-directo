@@ -1,0 +1,24 @@
+<% include ./partials/header %>
+<div class="ui three column centered grid">
+ <div class="column">
+		<div class="ui center aligned segment introText">
+			<h4>Empecemos</h4>
+			<p>La manera más inteligente de llevar tu negocio</p>
+		</div>
+		<h1 class="">Sign Up Now!</h1>
+		<form action="/signup" method="POST" class="mb-3">
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" name=username id="username" placeholder="Username" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="Password" class="form-control">
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">Submit</button>
+			<p>Are you a Registered user? <a href="/login">Click Here to Login!</a></p>
+		</form>
+	</div>
+</div>
+
+<% include ./partials/footer %>
