@@ -15,27 +15,98 @@ nav.ui.basic.segment {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c61999', endColorstr='#06a3e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 nav.ui.basic.segment p{
-	font-size: 1rem;
+	font-size: 1.375rem;
 	color: white;
 	display: inline-block;
 	vertical-align: middle;
 }
-
-div.ui.segment.introText{
-	margin-top: 7.59vh;
-	font-size: 1.25rem;
-	padding: 1rem;
-	display: inline-block;
-	vertical-align: middle;
+.ui.grid > .column:not(.row) {
+	padding-left: 0;
+	padding-right: 0;
 }
 
-div.ui.segment.introText h4{
-	font-size: 1.5rem;
-	display: inline-block;
-	vertical-align: middle;
-	margin-bottom: 2.25rem;
+div.ui.basic.segment.introText{
+	margin-top: 9.07vh;
+	margin-bottom: 7.31vh;
+	font-size: 1.375rem;
+	padding: 0rem;
+	padding-left: 20%;
+	padding-right: 20%;
+
 }
 
+div.ui.basic.segment.introText h4{
+	font-size: 1.875rem;
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 3.33vh;
+}
+
+.ui.segments:not(.horizontal) > .segment:last-child{
+	border-radius: 0 0 1rem 1rem;
+}
+
+.ui.segments:not(.horizontal) > .segment:first-child{
+	border-radius: 1rem 1rem 0 0;
+}
+
+div.ui.segments > .segment{
+	width: 100%;
+	height: 8.15vh;
+	min-height: 48px;
+	font-size: 1rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+div.ui.segments{
+	border-radius: 1rem;
+	margin-bottom: 2.59vh;
+}
+
+div.ui.selection.dropdown, .ui.upward.selection.dropdown.active.visible,
+.ui.upward.selection.dropdown.active, .ui.upward.selection.dropdown.visible  {
+	font-size: 1rem;
+	border-radius: 1rem !important;
+	height: 8.15vh;
+	min-height: 48px;
+	margin-bottom: 2.87vh;
+}
+
+.ui.floating.dropdown>.menu{
+	border-radius: 1rem !important;
+}
+.ui.upward.dropdown>.menu{
+	bottom: 130%;
+}
+
+body ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-track{
+	border-radius: 0 1rem 1rem 0;
+}
+
+.ui.search.selection.dropdown>input.search{
+	line-height: inherit;
+	height: 100%;
+}
+.ui.search.dropdown>.text{
+	top: 15%;
+}
+
+.ui.fluid.button{
+	background: #6586cf;
+	color: white;
+	border-radius: 150px;
+	height: 8.15vh;
+	min-height: 48px;
+}
+
+p {
+	color:rgba(191,191,191,.87);
+}
+
+
+
+/* 
 div.column {
 	border: 1px solid black;
-}
+} */

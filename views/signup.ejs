@@ -1,23 +1,39 @@
 <% include ./partials/header %>
-<div class="ui three column centered grid">
- <div class="column">
-		<div class="ui center aligned segment introText">
+<div class="ui nine column centered grid">
+ <div class="five wide column">
+		<div class="ui center aligned basic segment introText">
 			<h4>Empecemos</h4>
 			<p>La manera más inteligente de llevar tu negocio</p>
 		</div>
-		<h1 class="">Sign Up Now!</h1>
-		<form action="/signup" method="POST" class="mb-3">
-			<div class="form-group">
-				<label for="username">Username</label>
-				<input type="text" name=username id="username" placeholder="Username" class="form-control">
+		<form action="/signup" method="POST">
+			<div class="ui segments">
+				<div class="segment ui transparent input">
+					<input type="email" placeholder="Dirección de Correo electronico">
+				</div>
+				<div class="segment ui transparent input">
+					<input type="email" placeholder="Confirmar Correo electronico">
+				</div>
+				<div class="segment ui transparent input">
+					<input type="email" placeholder="Contraseña (mínimo 8 caracteres)">
+				</div>
 			</div>
-			<div class="form-group">
-				<label for="password">Password</label>
-				<input type="password" name="password" id="password" placeholder="Password" class="form-control">
+			<div class="ui fluid floating search selection dropdown" id="select">
+				<input type="hidden" name="pais">
+				<i class="dropdown"></i>
+				<div class="default text">Selecione su país</div>
+				<div class="menu">
+					<div class="item" data-value="AR"><i class="ar flag"></i>Argentina</div>
+					<div class="item" data-value="BO"><i class="bo flag"></i>Bolivia</div>
+					<div class="item" data-value="BR"><i class="br flag"></i>Brasil</div>
+					<div class="item" data-value="CO"><i class="co flag"></i>Colombia</div>
+					<div class="item" data-value="CL"><i class="cl flag"></i>Chile</div>
+					<div class="item" data-value="PE"><i class="pe flag"></i>Peru</div>
+					<div class="item" data-value="VE"><i class="ve flag"></i>Venezuela</div>
+				</div>
 			</div>
-			<button type="submit" class="btn btn-primary btn-block">Submit</button>
-			<p>Are you a Registered user? <a href="/login">Click Here to Login!</a></p>
+			<button type="submit" class="fluid ui button">Crear Cuenta</button>
 		</form>
+		<p>La manera más inteligente La manera más inteligente La manera más inteligente</p>
 	</div>
 </div>
 
