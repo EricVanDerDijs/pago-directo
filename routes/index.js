@@ -3,6 +3,7 @@ var express   = require("express"),
 	router     = express.Router();
 
 router.route("/signup")
-	.get(controller.renderSignUp);
+	.get(controller.renderSignUp)
+	.post(controller.logData);
 	
 module.exports = router;

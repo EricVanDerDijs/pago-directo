@@ -1,6 +1,6 @@
 <% include ./partials/header %>
-<div class="ui nine column centered grid">
- <div class="five wide column">
+<div class="ui sixteen column centered grid">
+ <div class="fifteen wide mobile eight wide tablet six wide computer column">
 		<div class="ui center aligned basic segment introText">
 			<h4>Empecemos</h4>
 			<p>La manera más inteligente de llevar tu negocio</p>
@@ -8,17 +8,17 @@
 		<form action="/signup" method="POST">
 			<div class="ui segments">
 				<div class="segment ui transparent input">
-					<input type="email" placeholder="Dirección de Correo electronico">
+					<input type="email" name="user[email]" placeholder="Dirección de Correo electronico">
 				</div>
 				<div class="segment ui transparent input">
-					<input type="email" placeholder="Confirmar Correo electronico">
+					<input type="email" name="user[emailConfirm]" placeholder="Confirmar Correo electronico">
 				</div>
 				<div class="segment ui transparent input">
-					<input type="email" placeholder="Contraseña (mínimo 8 caracteres)">
+					<input type="password" name="user[password]" placeholder="Contraseña (mínimo 8 caracteres)">
 				</div>
 			</div>
 			<div class="ui fluid floating search selection dropdown" id="select">
-				<input type="hidden" name="pais">
+				<input type="hidden" name="user[pais]">
 				<i class="dropdown"></i>
 				<div class="default text">Selecione su país</div>
 				<div class="menu">
@@ -33,7 +33,7 @@
 			</div>
 			<button type="submit" class="fluid ui button">Crear Cuenta</button>
 		</form>
-		<p>La manera más inteligente La manera más inteligente La manera más inteligente</p>
+		<p class="basic center align ui segment">La manera más inteligente La manera más inteligente La manera más inteligente</p>
 	</div>
 </div>
 

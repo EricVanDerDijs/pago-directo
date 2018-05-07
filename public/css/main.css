@@ -7,6 +7,7 @@ nav.ui.basic.segment {
 	justify-content: center;
 	align-items: center;
 	height: 9.25vh;
+	font-size: 1.375rem;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c61999+0,06a3e5+100 */
 	background: #c61999; /* Old browsers */
 	background: -moz-linear-gradient(10deg, #c61999 0%, #06a3e5 100%); /* FF3.6-15 */
@@ -15,30 +16,18 @@ nav.ui.basic.segment {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c61999', endColorstr='#06a3e5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 nav.ui.basic.segment p{
-	font-size: 1.375rem;
 	color: white;
-	display: inline-block;
-	vertical-align: middle;
-}
-.ui.grid > .column:not(.row) {
-	padding-left: 0;
-	padding-right: 0;
 }
 
 div.ui.basic.segment.introText{
-	margin-top: 9.07vh;
-	margin-bottom: 7.31vh;
 	font-size: 1.375rem;
 	padding: 0rem;
-	padding-left: 20%;
-	padding-right: 20%;
-
+	max-width: 312px;
+	margin: 9.07vh auto 7.31vh auto;
 }
 
 div.ui.basic.segment.introText h4{
 	font-size: 1.875rem;
-	display: inline-block;
-	vertical-align: middle;
 	margin-bottom: 3.33vh;
 }
 
@@ -65,7 +54,8 @@ div.ui.segments{
 }
 
 div.ui.selection.dropdown, .ui.upward.selection.dropdown.active.visible,
-.ui.upward.selection.dropdown.active, .ui.upward.selection.dropdown.visible  {
+.ui.upward.selection.dropdown.active, .ui.upward.selection.dropdown.visible, .ui.selection.dropdown.active.visible,
+.ui.selection.dropdown.active, .ui.selection.dropdown.visible  {
 	font-size: 1rem;
 	border-radius: 1rem !important;
 	height: 8.15vh;
@@ -100,8 +90,10 @@ body ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-track{
 	min-height: 48px;
 }
 
-p {
+p.basic.ui.segment {
+	margin: 0;
 	color:rgba(191,191,191,.87);
+	text-align: center;
 }
 
 
