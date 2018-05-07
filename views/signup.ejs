@@ -5,20 +5,20 @@
 			<h4>Empecemos</h4>
 			<p>La manera más inteligente de llevar tu negocio</p>
 		</div>
-		<form action="/signup" method="POST">
+		<form action="http://pagodirectotest.herokuapp.com/v1/signup" method="POST">
 			<div class="ui segments">
 				<div class="segment ui transparent input">
-					<input type="email" name="user[email]" placeholder="Dirección de Correo electronico">
+					<input type="email" name="email" placeholder="Dirección de Correo electronico">
 				</div>
 				<div class="segment ui transparent input">
-					<input type="email" name="user[emailConfirm]" placeholder="Confirmar Correo electronico">
+					<input type="text" name="username" placeholder="Nombre de Usuario">
 				</div>
 				<div class="segment ui transparent input">
-					<input type="password" name="user[password]" placeholder="Contraseña (mínimo 8 caracteres)">
+					<input type="password" name="password" placeholder="Contraseña (mínimo 8 caracteres)">
 				</div>
 			</div>
 			<div class="ui fluid floating search selection dropdown" id="select">
-				<input type="hidden" name="user[pais]">
+				<input type="hidden">
 				<i class="dropdown"></i>
 				<div class="default text">Selecione su país</div>
 				<div class="menu">
